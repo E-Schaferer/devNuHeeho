@@ -4,7 +4,7 @@ steps:
       config:
         insertStrategy: INSERT
         postSQL: ""
-        preSQL: system$wait(2, "minutes")
+        preSQL: CALL SYSTEM$WAIT(2, 'MINUTES');
         testsEnabled: true
         truncateBefore: true
       database: ""
