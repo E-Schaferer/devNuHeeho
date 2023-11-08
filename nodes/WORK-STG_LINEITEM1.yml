@@ -4,7 +4,7 @@ steps:
       config:
         insertStrategy: INSERT
         postSQL: ""
-        preSQL: CALL SYSTEM$WAIT(10, 'MINUTES');
+        preSQL: CALL SYSTEM$WAIT(2, 'MINUTES');
         testsEnabled: true
         truncateBefore: true
       database: ""
@@ -63,20 +63,6 @@ steps:
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: f0db8b90-ab4c-4c91-8e95-f52a9d7adab1
-                    stepCounter: 390b52a6-e08b-431a-b6e1-6e923bd6ea73
-                transform: ""
-          - columnReference:
-              columnCounter: 4eb8049e-0270-4bd6-8a17-3630717bcf4e
-              stepCounter: 754b1f7c-bcd7-4b2c-acaf-a4696e2c4a2b
-            dataType: NUMBER(38,0)
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: L_LINENUMBER
-            nullable: false
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 17eee7eb-9c2b-4dbb-9b66-4ddaa9027540
                     stepCounter: 390b52a6-e08b-431a-b6e1-6e923bd6ea73
                 transform: ""
           - columnReference:

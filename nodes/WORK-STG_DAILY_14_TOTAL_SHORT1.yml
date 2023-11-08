@@ -4,7 +4,7 @@ steps:
       config:
         insertStrategy: INSERT
         postSQL: ""
-        preSQL: CALL SYSTEM$WAIT(10, 'MINUTES');
+        preSQL: CALL SYSTEM$WAIT(2, 'MINUTES');
         testsEnabled: true
         truncateBefore: true
       database: ""
@@ -28,20 +28,6 @@ steps:
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: dde2a8e1-9fa1-40af-ac98-58d3d84e220d
-                    stepCounter: a0eb97b0-75f8-4c14-b14b-56b5c9ec62f9
-                transform: ""
-          - columnReference:
-              columnCounter: d40ccc65-38d1-4554-a70c-33ad940acc64
-              stepCounter: 9778703c-02bb-4903-8c53-4c9e618710a0
-            dataType: TIMESTAMP_NTZ(9)
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: T
-            nullable: true
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 3e79757c-f4d1-4f48-860b-33dae17752ee
                     stepCounter: a0eb97b0-75f8-4c14-b14b-56b5c9ec62f9
                 transform: ""
         cteString: ""

@@ -4,7 +4,7 @@ steps:
       config:
         insertStrategy: INSERT
         postSQL: ""
-        preSQL: CALL SYSTEM$WAIT(10, 'MINUTES');
+        preSQL: CALL SYSTEM$WAIT(2, 'MINUTES');
         testsEnabled: true
         truncateBefore: true
       database: ""
@@ -70,20 +70,6 @@ steps:
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: 8d80a9b4-f64c-4f3f-97fd-04573e949bbd
-                    stepCounter: fefffcf2-acc7-4306-bd16-8553ff166e42
-                transform: ""
-          - columnReference:
-              columnCounter: efb8c589-5cd5-44ee-ba8b-8bea46562899
-              stepCounter: bae42b1a-b9d9-4323-bf7f-fd1a2eea3a5d
-            dataType: VARCHAR(15)
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: S_PHONE
-            nullable: false
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: f1ad89f6-a4f0-42fe-ba5e-ace5d65c3c39
                     stepCounter: fefffcf2-acc7-4306-bd16-8553ff166e42
                 transform: ""
           - columnReference:

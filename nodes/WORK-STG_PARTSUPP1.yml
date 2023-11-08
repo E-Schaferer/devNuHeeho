@@ -4,7 +4,7 @@ steps:
       config:
         insertStrategy: INSERT
         postSQL: ""
-        preSQL: CALL SYSTEM$WAIT(10, 'MINUTES');
+        preSQL: CALL SYSTEM$WAIT(2, 'MINUTES');
         testsEnabled: true
         truncateBefore: true
       database: ""
@@ -28,20 +28,6 @@ steps:
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: 1fe1473a-3f80-4e7a-ba6e-729071b497ca
-                    stepCounter: 6b393d4a-9974-46d6-9749-127eed9fae46
-                transform: ""
-          - columnReference:
-              columnCounter: 2f4e1ff7-a0a1-43c0-87f8-7130f96b30c2
-              stepCounter: ab9dbf50-9dc6-4ccd-bf4b-1494db2e2ce3
-            dataType: NUMBER(38,0)
-            description: Foreign Key to S_SUPPKEY
-            hashColumns: []
-            hashDetails: null
-            name: PS_SUPPKEY
-            nullable: false
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 3304201b-327e-4948-adc4-89ad707308c8
                     stepCounter: 6b393d4a-9974-46d6-9749-127eed9fae46
                 transform: ""
           - columnReference:
