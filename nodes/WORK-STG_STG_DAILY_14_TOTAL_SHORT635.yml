@@ -1,0 +1,403 @@
+fileVersion: 1
+id: 858cd74d-e0df-4f6e-93af-c554543a7847
+name: STG_STG_DAILY_14_TOTAL_SHORT635
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: WORK
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8ffb1a43-6034-4c96-8326-41e244805532
+          stepCounter: 858cd74d-e0df-4f6e-93af-c554543a7847
+        config: {}
+        dataType: VARIANT
+        description: ""
+        name: V
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 86afcba8-62c5-4ed2-970c-bc5cc84489e2
+                stepCounter: eb94872c-d3c0-4239-962c-93c889efe969
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9be843d4-4f99-4e25-b1d5-92f5a2e0e459
+          stepCounter: 858cd74d-e0df-4f6e-93af-c554543a7847
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: T
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bc9800d9-4f19-4dcb-b581-7b47894fabff
+                stepCounter: eb94872c-d3c0-4239-962c-93c889efe969
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 79086748-b632-49e1-8b94-052e5efdae5f
+          stepCounter: 858cd74d-e0df-4f6e-93af-c554543a7847
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: city_coord_lat
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c3500599-ad5d-4e63-a8db-8a94d5c1d007
+                stepCounter: eb94872c-d3c0-4239-962c-93c889efe969
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 67da21ea-d0fb-4e45-b393-c29366d0d813
+          stepCounter: 858cd74d-e0df-4f6e-93af-c554543a7847
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: city_coord_lon
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ee061490-13fb-4d32-aca0-b9bdb2cae3e2
+                stepCounter: eb94872c-d3c0-4239-962c-93c889efe969
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 305c48f9-1942-4282-8646-deacdc5c92da
+          stepCounter: 858cd74d-e0df-4f6e-93af-c554543a7847
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: city_country
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 131a23f9-4fc6-49bf-97cd-9649cea46e22
+                stepCounter: eb94872c-d3c0-4239-962c-93c889efe969
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 55a39a05-0032-4434-9df5-f069c641eb99
+          stepCounter: 858cd74d-e0df-4f6e-93af-c554543a7847
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: city_id
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6ff32867-0fa4-4c64-9e93-58fa02f746fb
+                stepCounter: eb94872c-d3c0-4239-962c-93c889efe969
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b10a8f41-44b5-43d1-a135-25b21d079196
+          stepCounter: 858cd74d-e0df-4f6e-93af-c554543a7847
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: city_name
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c06539ea-1f3e-443a-9299-3937bd88816a
+                stepCounter: eb94872c-d3c0-4239-962c-93c889efe969
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a5f88d2d-ea26-4ebd-a680-12246b511eff
+          stepCounter: 858cd74d-e0df-4f6e-93af-c554543a7847
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: data_clouds
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 45e83d8b-c583-435c-bd95-af252c7a8f7f
+                stepCounter: eb94872c-d3c0-4239-962c-93c889efe969
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 085e4790-d7b0-4063-a633-51cefe4b70a3
+          stepCounter: 858cd74d-e0df-4f6e-93af-c554543a7847
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: data_deg
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 148502ed-7850-4238-a428-b4e904bd7776
+                stepCounter: eb94872c-d3c0-4239-962c-93c889efe969
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 24c7fd5e-d354-4ac2-ad5f-69f2eae5bad9
+          stepCounter: 858cd74d-e0df-4f6e-93af-c554543a7847
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: data_dt
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d7d7e575-821f-4be9-8d86-eef5a82085a9
+                stepCounter: eb94872c-d3c0-4239-962c-93c889efe969
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f76d448c-c4ba-4b26-998f-2c59f9689365
+          stepCounter: 858cd74d-e0df-4f6e-93af-c554543a7847
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: data_humidity
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1428ce61-8fea-4292-89ce-d0eb662e037c
+                stepCounter: eb94872c-d3c0-4239-962c-93c889efe969
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fd8a6b20-accf-4eaf-ba8f-1356aeeb0579
+          stepCounter: 858cd74d-e0df-4f6e-93af-c554543a7847
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: data_pressure
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: dc53dc51-6573-4a35-8d3a-dd2e3d893072
+                stepCounter: eb94872c-d3c0-4239-962c-93c889efe969
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3e223941-5ddc-4758-99b1-70192da6b3c2
+          stepCounter: 858cd74d-e0df-4f6e-93af-c554543a7847
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: data_rain
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 402749ac-25d1-496f-bf49-aa162a515020
+                stepCounter: eb94872c-d3c0-4239-962c-93c889efe969
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5f578f3d-0aca-4774-a80c-15f8c53f87c8
+          stepCounter: 858cd74d-e0df-4f6e-93af-c554543a7847
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: data_speed
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 212c5228-dc84-4d63-8e16-3a0eb5af2c19
+                stepCounter: eb94872c-d3c0-4239-962c-93c889efe969
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 844be8ce-61ad-4181-a0c2-0b7e2aa296f4
+          stepCounter: 858cd74d-e0df-4f6e-93af-c554543a7847
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: data_temp_day
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 692d1779-8fb9-4782-b8d3-400cd57581da
+                stepCounter: eb94872c-d3c0-4239-962c-93c889efe969
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 14974708-2086-4ace-99c8-db69f91e1d9c
+          stepCounter: 858cd74d-e0df-4f6e-93af-c554543a7847
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: data_temp_eve
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e469a2cf-2914-4705-94b0-b003aec0878c
+                stepCounter: eb94872c-d3c0-4239-962c-93c889efe969
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e9a60ad8-b818-4157-947c-16a9c2c34bd6
+          stepCounter: 858cd74d-e0df-4f6e-93af-c554543a7847
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: data_temp_max
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1bd58e89-9b2a-4e31-b049-73f3072ce62b
+                stepCounter: eb94872c-d3c0-4239-962c-93c889efe969
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1392fe26-dbc9-4e8e-b342-e44656a167e2
+          stepCounter: 858cd74d-e0df-4f6e-93af-c554543a7847
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: data_temp_min
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 13c8160f-88b6-4bf6-a81e-049f4fd31e7b
+                stepCounter: eb94872c-d3c0-4239-962c-93c889efe969
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 51bb2f54-deac-424f-95d3-b585216a64fc
+          stepCounter: 858cd74d-e0df-4f6e-93af-c554543a7847
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: data_temp_morn
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b8ae0a9a-6ee5-4c40-9a6a-b40d36213b42
+                stepCounter: eb94872c-d3c0-4239-962c-93c889efe969
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fcd9bbba-b11d-4642-9b5f-4b08526e72cc
+          stepCounter: 858cd74d-e0df-4f6e-93af-c554543a7847
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: data_temp_night
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d2367fe5-21ba-4294-9f2c-f867a5fc273e
+                stepCounter: eb94872c-d3c0-4239-962c-93c889efe969
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7f422eb4-f37e-449c-b519-e496c5b75793
+          stepCounter: 858cd74d-e0df-4f6e-93af-c554543a7847
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: data_uvi
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8506b86e-72bf-405c-ae54-e43b68aa3c80
+                stepCounter: eb94872c-d3c0-4239-962c-93c889efe969
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3a261ea7-4323-4463-b6ba-c3fb6a511b4b
+          stepCounter: 858cd74d-e0df-4f6e-93af-c554543a7847
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: data_weather_description
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5656964d-6864-47a9-b527-f5bc8b14c4a8
+                stepCounter: eb94872c-d3c0-4239-962c-93c889efe969
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fd8a682d-d042-456a-ad99-a9932b1f029a
+          stepCounter: 858cd74d-e0df-4f6e-93af-c554543a7847
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: data_weather_icon
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4e7b79cc-b186-428b-9cd5-0cf98d2f1def
+                stepCounter: eb94872c-d3c0-4239-962c-93c889efe969
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ea7eb092-df56-420f-8288-489f19076b5f
+          stepCounter: 858cd74d-e0df-4f6e-93af-c554543a7847
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: data_weather_id
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 62a43aba-d556-4cb5-bb22-d7b4fdaa9aa5
+                stepCounter: eb94872c-d3c0-4239-962c-93c889efe969
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 26bcf08a-bfed-4e43-b235-b8d6c4ebae5f
+          stepCounter: 858cd74d-e0df-4f6e-93af-c554543a7847
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: data_weather_main
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: efaa0f2f-4be0-4a46-91f4-133b50f4d27e
+                stepCounter: eb94872c-d3c0-4239-962c-93c889efe969
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 55131b12-4b07-424d-bd74-2687db059c96
+          stepCounter: 858cd74d-e0df-4f6e-93af-c554543a7847
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: time
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 076d5484-0bf3-450b-913e-b55e8c5f0fd9
+                stepCounter: eb94872c-d3c0-4239-962c-93c889efe969
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: WORK
+            nodeName: STG_STG_DAILY_14_TOTAL_SHORT95
+        join:
+          joinCondition: FROM {{ ref('WORK', 'STG_STG_DAILY_14_TOTAL_SHORT95') }} "STG_STG_DAILY_14_TOTAL_SHORT95"
+        name: STG_STG_DAILY_14_TOTAL_SHORT635
+        noLinkRefs: []
+  name: STG_STG_DAILY_14_TOTAL_SHORT635
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

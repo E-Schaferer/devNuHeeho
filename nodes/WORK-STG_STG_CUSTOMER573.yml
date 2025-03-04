@@ -1,0 +1,153 @@
+fileVersion: 1
+id: f6b8e92c-40e7-4e41-a00e-489a2f1ef2ff
+name: STG_STG_CUSTOMER573
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: WORK
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 42c9408b-f9bd-49a2-aef9-5a19746ac240
+          stepCounter: f6b8e92c-40e7-4e41-a00e-489a2f1ef2ff
+        config: {}
+        dataType: NUMBER(38,0)
+        description: SF*150,000 are populated
+        name: C_CUSTKEY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 35d269c2-55d8-496d-83ca-d228c31d0e44
+                stepCounter: 3cfd3f2d-c234-4f75-996d-f0d022b5507a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 37d3527d-c86d-43da-b407-c3bacadb32d4
+          stepCounter: f6b8e92c-40e7-4e41-a00e-489a2f1ef2ff
+        config: {}
+        dataType: VARCHAR(25)
+        description: |
+
+          IM A PACKAGE MACRO
+        name: C_NAME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a892c93f-21ab-48a9-8742-d12c2d5a5c22
+                stepCounter: 3cfd3f2d-c234-4f75-996d-f0d022b5507a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ec309ddd-54c1-4aba-bdce-a4674ddaa63d
+          stepCounter: f6b8e92c-40e7-4e41-a00e-489a2f1ef2ff
+        config: {}
+        dataType: VARCHAR(40)
+        description: ""
+        name: C_ADDRESS
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 447c3f78-bfae-4c86-8219-797aba9bf6dc
+                stepCounter: 3cfd3f2d-c234-4f75-996d-f0d022b5507a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8ea7b291-acb9-451d-b4d8-22e9cb76903c
+          stepCounter: f6b8e92c-40e7-4e41-a00e-489a2f1ef2ff
+        config: {}
+        dataType: NUMBER(38,0)
+        description: Foreign Key to N_NATIONKEY
+        name: C_NATIONKEY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 61dc962c-f3a1-448e-bed0-a2b6ca165096
+                stepCounter: 3cfd3f2d-c234-4f75-996d-f0d022b5507a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 30ffa4e9-ff37-4c1c-8d00-d37dbd8132f5
+          stepCounter: f6b8e92c-40e7-4e41-a00e-489a2f1ef2ff
+        config: {}
+        dataType: VARCHAR(15)
+        description: ""
+        name: C_PHONE
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d02424bd-a735-4fb8-b538-55bd25aeffdf
+                stepCounter: 3cfd3f2d-c234-4f75-996d-f0d022b5507a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d7045aae-ba00-4c39-a06f-deec6db5233c
+          stepCounter: f6b8e92c-40e7-4e41-a00e-489a2f1ef2ff
+        config: {}
+        dataType: NUMBER(12,2)
+        description: ""
+        name: C_ACCTBAL
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 03de11f5-b93d-474b-a4e9-65263a9d1c0d
+                stepCounter: 3cfd3f2d-c234-4f75-996d-f0d022b5507a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0d09d6a4-469e-4894-b06c-19342cb30df8
+          stepCounter: f6b8e92c-40e7-4e41-a00e-489a2f1ef2ff
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: C_MKTSEGMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 93627812-8339-49ae-ad8a-304816c2731c
+                stepCounter: 3cfd3f2d-c234-4f75-996d-f0d022b5507a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 54deff7d-31d9-4ebf-8976-8fd8d7798c6b
+          stepCounter: f6b8e92c-40e7-4e41-a00e-489a2f1ef2ff
+        config: {}
+        dataType: VARCHAR(117)
+        description: ""
+        name: C_COMMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1484760b-d813-4fc6-b5c0-d9e8c6a1e0a2
+                stepCounter: 3cfd3f2d-c234-4f75-996d-f0d022b5507a
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: WORK
+            nodeName: STG_STG_CUSTOMER37
+        join:
+          joinCondition: FROM {{ ref('WORK', 'STG_STG_CUSTOMER37') }} "STG_STG_CUSTOMER37"
+        name: STG_STG_CUSTOMER573
+        noLinkRefs: []
+  name: STG_STG_CUSTOMER573
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
