@@ -1,51 +1,54 @@
-steps:
-  STG_DAILY_14_TOTAL_SHORT1-9778703c-02bb-4903-8c53-4c9e618710a0:
-    operation:
-      config:
-        insertStrategy: INSERT
-        postSQL: ""
-        preSQL: CALL SYSTEM$WAIT(2, 'MINUTES');
-        testsEnabled: true
-        truncateBefore: true
-      database: ""
-      deployEnabled: true
-      description: ""
-      isMultisource: false
-      locationName: WORK
-      materializationType: table
-      metadata:
-        appliedNodeTests: []
-        columns:
-          - columnReference:
-              columnCounter: f7502677-88c3-4172-9c2d-94c91b59a64a
-              stepCounter: 9778703c-02bb-4903-8c53-4c9e618710a0
-            dataType: VARIANT
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: V
-            nullable: true
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: dde2a8e1-9fa1-40af-ac98-58d3d84e220d
-                    stepCounter: a0eb97b0-75f8-4c14-b14b-56b5c9ec62f9
-                transform: ""
-        cteString: ""
-        enabledColumnTestIDs: []
-        sourceMapping:
-          - aliases: {}
-            customSQL:
-              customSQL: ""
-            dependencies:
-              - locationName: WORK
-                nodeName: STG_DAILY_14_TOTAL_SHORT
-            join:
-              joinCondition: FROM {{ ref('WORK', 'STG_DAILY_14_TOTAL_SHORT') }} "STG_DAILY_14_TOTAL_SHORT"
-            name: STG_DAILY_14_TOTAL_SHORT1
-            noLinkRefs: []
-      name: STG_DAILY_14_TOTAL_SHORT1
-      overrideSQL: false
-      schema: ""
-      sqlType: Stage
-      type: sql
-    stepCounter: 9778703c-02bb-4903-8c53-4c9e618710a0
+fileVersion: 1
+id: 9778703c-02bb-4903-8c53-4c9e618710a0
+name: STG_DAILY_14_TOTAL_SHORT1
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: CALL SYSTEM$WAIT(2, 'MINUTES');
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: WORK
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f7502677-88c3-4172-9c2d-94c91b59a64a
+          stepCounter: 9778703c-02bb-4903-8c53-4c9e618710a0
+        config: {}
+        dataType: VARIANT
+        description: ""
+        hashDetails: null
+        name: V
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: dde2a8e1-9fa1-40af-ac98-58d3d84e220d
+                stepCounter: a0eb97b0-75f8-4c14-b14b-56b5c9ec62f9
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: WORK
+            nodeName: STG_DAILY_14_TOTAL_SHORT
+        join:
+          joinCondition: FROM {{ ref('WORK', 'STG_DAILY_14_TOTAL_SHORT') }} "STG_DAILY_14_TOTAL_SHORT"
+        name: STG_DAILY_14_TOTAL_SHORT1
+        noLinkRefs: []
+  name: STG_DAILY_14_TOTAL_SHORT1
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

@@ -1,65 +1,69 @@
-steps:
-  STG_DAILY_14_TOTAL_SHORT-a0eb97b0-75f8-4c14-b14b-56b5c9ec62f9:
-    operation:
-      config:
-        insertStrategy: INSERT
-        postSQL: ""
-        preSQL: CALL SYSTEM$WAIT(2, 'MINUTES');
-        testsEnabled: true
-        truncateBefore: true
-      database: ""
-      deployEnabled: true
-      description: ""
-      isMultisource: false
-      locationName: WORK
-      materializationType: table
-      metadata:
-        appliedNodeTests: []
-        columns:
-          - columnReference:
-              columnCounter: dde2a8e1-9fa1-40af-ac98-58d3d84e220d
-              stepCounter: a0eb97b0-75f8-4c14-b14b-56b5c9ec62f9
-            dataType: VARIANT
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: V
-            nullable: true
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 2a20ba30-55e5-47a4-a504-66b11ca81487
-                    stepCounter: 46ceea8a-7f6c-43ae-9000-eb88e62da015
-                transform: ""
-          - columnReference:
-              columnCounter: 3e79757c-f4d1-4f48-860b-33dae17752ee
-              stepCounter: a0eb97b0-75f8-4c14-b14b-56b5c9ec62f9
-            dataType: TIMESTAMP_NTZ(9)
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: T
-            nullable: true
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 5faa9ec5-92f4-40f0-ae0e-4174a90342b8
-                    stepCounter: 46ceea8a-7f6c-43ae-9000-eb88e62da015
-                transform: ""
-        cteString: ""
-        enabledColumnTestIDs: []
-        sourceMapping:
-          - aliases: {}
-            customSQL:
-              customSQL: ""
-            dependencies:
-              - locationName: SAMPLE
-                nodeName: DAILY_14_TOTAL_SHORT
-            join:
-              joinCondition: FROM {{ ref('SAMPLE', 'DAILY_14_TOTAL_SHORT') }} "DAILY_14_TOTAL_SHORT"
-            name: STG_DAILY_14_TOTAL_SHORT
-            noLinkRefs: []
-      name: STG_DAILY_14_TOTAL_SHORT
-      overrideSQL: false
-      schema: ""
-      sqlType: Stage
-      type: sql
-    stepCounter: a0eb97b0-75f8-4c14-b14b-56b5c9ec62f9
+fileVersion: 1
+id: a0eb97b0-75f8-4c14-b14b-56b5c9ec62f9
+name: STG_DAILY_14_TOTAL_SHORT
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: CALL SYSTEM$WAIT(2, 'MINUTES');
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: WORK
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: dde2a8e1-9fa1-40af-ac98-58d3d84e220d
+          stepCounter: a0eb97b0-75f8-4c14-b14b-56b5c9ec62f9
+        config: {}
+        dataType: VARIANT
+        description: ""
+        hashDetails: null
+        name: V
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2a20ba30-55e5-47a4-a504-66b11ca81487
+                stepCounter: 46ceea8a-7f6c-43ae-9000-eb88e62da015
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3e79757c-f4d1-4f48-860b-33dae17752ee
+          stepCounter: a0eb97b0-75f8-4c14-b14b-56b5c9ec62f9
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        hashDetails: null
+        name: T
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5faa9ec5-92f4-40f0-ae0e-4174a90342b8
+                stepCounter: 46ceea8a-7f6c-43ae-9000-eb88e62da015
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAMPLE
+            nodeName: DAILY_14_TOTAL_SHORT
+        join:
+          joinCondition: FROM {{ ref('SAMPLE', 'DAILY_14_TOTAL_SHORT') }} "DAILY_14_TOTAL_SHORT"
+        name: STG_DAILY_14_TOTAL_SHORT
+        noLinkRefs: []
+  name: STG_DAILY_14_TOTAL_SHORT
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

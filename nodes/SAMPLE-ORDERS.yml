@@ -1,156 +1,154 @@
-steps:
-  ORDERS-aeb7e2ff-af0a-4e39-ae33-ca4f19b57775:
-    operation:
-      database: ""
-      dataset: ""
-      deployEnabled: true
-      description: |-
-        Orders are not present for all customers. In fact, one-third of the customers do not have any order in
-        the database. The orders are assigned at random to two-thirds of the customers (see Clause 4: ). The purpose of
-        this is to exercise the capabilities of the DBMS to handle "dead data" when joining two or more tables.
-      locationName: SAMPLE
-      metadata:
-        columns:
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: 16fc3307-7339-4ff5-bbbf-3bec4665b913
-              stepCounter: aeb7e2ff-af0a-4e39-ae33-ca4f19b57775
-            config: {}
-            dataType: NUMBER(38,0)
-            defaultValue: ""
-            description: SF*1,500,000 are sparsely populated
-            name: O_ORDERKEY
-            nullable: true
-            primaryKey: false
-            uniqueKey: false
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: 95b31b23-5d31-4ba5-b06b-4f54efc8a2f7
-              stepCounter: aeb7e2ff-af0a-4e39-ae33-ca4f19b57775
-            config: {}
-            dataType: NUMBER(38,0)
-            defaultValue: ""
-            description: Foreign Key to C_CUSTKEY
-            name: O_CUSTKEY
-            nullable: true
-            primaryKey: false
-            uniqueKey: false
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: 12e83c1f-e383-4dba-91bf-107839bd225d
-              stepCounter: aeb7e2ff-af0a-4e39-ae33-ca4f19b57775
-            config: {}
-            dataType: VARCHAR(1)
-            defaultValue: ""
-            description: ""
-            name: O_ORDERSTATUS
-            nullable: false
-            primaryKey: false
-            uniqueKey: false
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: 608fd071-1eff-4c51-a20e-a65a14c61897
-              stepCounter: aeb7e2ff-af0a-4e39-ae33-ca4f19b57775
-            config: {}
-            dataType: NUMBER(12,2)
-            defaultValue: ""
-            description: ""
-            name: O_TOTALPRICE
-            nullable: false
-            primaryKey: false
-            uniqueKey: false
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: 282480e3-66b0-4c37-a016-da558c56d492
-              stepCounter: aeb7e2ff-af0a-4e39-ae33-ca4f19b57775
-            config: {}
-            dataType: DATE
-            defaultValue: ""
-            description: ""
-            name: O_ORDERDATE
-            nullable: false
-            primaryKey: false
-            uniqueKey: false
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: e4918bb4-4698-4294-9cdd-fc56415c14e6
-              stepCounter: aeb7e2ff-af0a-4e39-ae33-ca4f19b57775
-            config: {}
-            dataType: VARCHAR(15)
-            defaultValue: ""
-            description: ""
-            name: O_ORDERPRIORITY
-            nullable: false
-            primaryKey: false
-            uniqueKey: false
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: 4bc8a4ed-f350-43d8-ba62-de4a23a912a1
-              stepCounter: aeb7e2ff-af0a-4e39-ae33-ca4f19b57775
-            config: {}
-            dataType: VARCHAR(15)
-            defaultValue: ""
-            description: ""
-            name: O_CLERK
-            nullable: false
-            primaryKey: false
-            uniqueKey: false
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: c76e7206-a11a-45c3-8322-c4c30fa967c4
-              stepCounter: aeb7e2ff-af0a-4e39-ae33-ca4f19b57775
-            config: {}
-            dataType: NUMBER(38,0)
-            defaultValue: ""
-            description: ""
-            name: O_SHIPPRIORITY
-            nullable: false
-            primaryKey: false
-            uniqueKey: false
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: f8d4f882-2de7-4a34-8f21-86f1bdfd9c52
-              stepCounter: aeb7e2ff-af0a-4e39-ae33-ca4f19b57775
-            config: {}
-            dataType: VARCHAR(79)
-            defaultValue: ""
-            description: ""
-            name: O_COMMENT
-            nullable: false
-            primaryKey: false
-            uniqueKey: false
-        join:
-          joinCondition: FROM {{ ref('SAMPLE', 'ORDERS') }}
-      name: ORDERS
-      schema: ""
-      sqlType: Source
-      table: ORDERS
-      type: sourceInput
-    stepCounter: aeb7e2ff-af0a-4e39-ae33-ca4f19b57775
+fileVersion: 1
+id: aeb7e2ff-af0a-4e39-ae33-ca4f19b57775
+name: ORDERS
+operation:
+  database: ""
+  deployEnabled: true
+  description: |-
+    Orders are not present for all customers. In fact, one-third of the customers do not have any order in
+    the database. The orders are assigned at random to two-thirds of the customers (see Clause 4: ). The purpose of
+    this is to exercise the capabilities of the DBMS to handle "dead data" when joining two or more tables.
+  locationName: SAMPLE
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 16fc3307-7339-4ff5-bbbf-3bec4665b913
+          stepCounter: aeb7e2ff-af0a-4e39-ae33-ca4f19b57775
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: SF*1,500,000 are sparsely populated
+        name: O_ORDERKEY
+        nullable: true
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 95b31b23-5d31-4ba5-b06b-4f54efc8a2f7
+          stepCounter: aeb7e2ff-af0a-4e39-ae33-ca4f19b57775
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: Foreign Key to C_CUSTKEY
+        name: O_CUSTKEY
+        nullable: true
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 12e83c1f-e383-4dba-91bf-107839bd225d
+          stepCounter: aeb7e2ff-af0a-4e39-ae33-ca4f19b57775
+        config: {}
+        dataType: VARCHAR(1)
+        defaultValue: ""
+        description: ""
+        name: O_ORDERSTATUS
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 608fd071-1eff-4c51-a20e-a65a14c61897
+          stepCounter: aeb7e2ff-af0a-4e39-ae33-ca4f19b57775
+        config: {}
+        dataType: NUMBER(12,2)
+        defaultValue: ""
+        description: ""
+        name: O_TOTALPRICE
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 282480e3-66b0-4c37-a016-da558c56d492
+          stepCounter: aeb7e2ff-af0a-4e39-ae33-ca4f19b57775
+        config: {}
+        dataType: DATE
+        defaultValue: ""
+        description: ""
+        name: O_ORDERDATE
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e4918bb4-4698-4294-9cdd-fc56415c14e6
+          stepCounter: aeb7e2ff-af0a-4e39-ae33-ca4f19b57775
+        config: {}
+        dataType: VARCHAR(15)
+        defaultValue: ""
+        description: ""
+        name: O_ORDERPRIORITY
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4bc8a4ed-f350-43d8-ba62-de4a23a912a1
+          stepCounter: aeb7e2ff-af0a-4e39-ae33-ca4f19b57775
+        config: {}
+        dataType: VARCHAR(15)
+        defaultValue: ""
+        description: ""
+        name: O_CLERK
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c76e7206-a11a-45c3-8322-c4c30fa967c4
+          stepCounter: aeb7e2ff-af0a-4e39-ae33-ca4f19b57775
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: O_SHIPPRIORITY
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f8d4f882-2de7-4a34-8f21-86f1bdfd9c52
+          stepCounter: aeb7e2ff-af0a-4e39-ae33-ca4f19b57775
+        config: {}
+        dataType: VARCHAR(79)
+        defaultValue: ""
+        description: ""
+        name: O_COMMENT
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+  name: ORDERS
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

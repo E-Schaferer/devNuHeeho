@@ -1,48 +1,46 @@
-steps:
-  DAILY_14_TOTAL_SHORT-46ceea8a-7f6c-43ae-9000-eb88e62da015:
-    operation:
-      database: ""
-      dataset: ""
-      deployEnabled: true
-      description: ""
-      locationName: SAMPLE
-      metadata:
-        columns:
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: 2a20ba30-55e5-47a4-a504-66b11ca81487
-              stepCounter: 46ceea8a-7f6c-43ae-9000-eb88e62da015
-            config: {}
-            dataType: VARIANT
-            defaultValue: ""
-            description: ""
-            name: V
-            nullable: true
-            primaryKey: false
-            uniqueKey: false
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: 5faa9ec5-92f4-40f0-ae0e-4174a90342b8
-              stepCounter: 46ceea8a-7f6c-43ae-9000-eb88e62da015
-            config: {}
-            dataType: TIMESTAMP_NTZ(9)
-            defaultValue: ""
-            description: ""
-            name: T
-            nullable: true
-            primaryKey: false
-            uniqueKey: false
-        join:
-          joinCondition: FROM {{ ref('SAMPLE', 'DAILY_14_TOTAL_SHORT') }}
-      name: DAILY_14_TOTAL_SHORT
-      schema: ""
-      sqlType: Source
-      table: DAILY_14_TOTAL_SHORT
-      type: sourceInput
-    stepCounter: 46ceea8a-7f6c-43ae-9000-eb88e62da015
+fileVersion: 1
+id: 46ceea8a-7f6c-43ae-9000-eb88e62da015
+name: DAILY_14_TOTAL_SHORT
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SAMPLE
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2a20ba30-55e5-47a4-a504-66b11ca81487
+          stepCounter: 46ceea8a-7f6c-43ae-9000-eb88e62da015
+        config: {}
+        dataType: VARIANT
+        defaultValue: ""
+        description: ""
+        name: V
+        nullable: true
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5faa9ec5-92f4-40f0-ae0e-4174a90342b8
+          stepCounter: 46ceea8a-7f6c-43ae-9000-eb88e62da015
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: T
+        nullable: true
+        primaryKey: false
+        uniqueKey: false
+  name: DAILY_14_TOTAL_SHORT
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node
